@@ -40,6 +40,7 @@ module.exports = {
     return {
       ...options,
       presets: [...options.presets, '@babel/preset-react'],
+      plugins: [...options.plugins, 'react-require'],
     };
   },
 };
