@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-jarel/starburst": ["packages/starburst/src/index.ts"],
+      "@nx-jarel/supernova": ["packages/supernova/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
