@@ -20,9 +20,9 @@ jobs:
             - v1-dependencies-
       - run: yarn install
         # 👇 Runs the Chromatic CLI
-      - run: yarn chromatic --project-token=${CHROMATIC_GALAXY} --build-script-name=build-storybook-galaxy
-      - run: yarn chromatic --project-token=${CHROMATIC_STARBURST} --build-script-name=build-storybook-starburst
-      - run: yarn chromatic --project-token=${CHROMATIC_SUPERNOVA} --build-script-name=build-storybook-supernova
+      - run: npx chromatic --project-token=${CHROMATIC_GALAXY} --build-script-name=build-storybook-galaxy
+      - run: npx chromatic --project-token=${CHROMATIC_STARBURST} --build-script-name=build-storybook-starburst
+      - run: npx chromatic --project-token=${CHROMATIC_SUPERNOVA} --build-script-name=build-storybook-supernova
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
