@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 export interface ButtonProps {}
 
 const StyledButton = styled.button`
-  background-color: #059669;
+  background-color: #c026d3;
   color: #FFF;
   padding: 8px 12px;
 `;

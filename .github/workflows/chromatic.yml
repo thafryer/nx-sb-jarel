@@ -25,6 +25,13 @@ jobs:
           buildScriptName: build-storybook-supernova
           projectToken: ${{ secrets.CHROMATIC_SUPERNOVA}}
           diagnostics: true
+        env:
+          LOG_LEVEL: debug
+       - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: Chromatic Diagnostics
+          path: chromatic-diagnostics.json
       - name: Publish Galaxy to Chromatic
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
@@ -33,6 +40,8 @@ jobs:
           buildScriptName: build-storybook-galaxy
           projectToken: ${{ secrets.CHROMATIC_GALAXY}}
           diagnostics: true
+        env:
+          LOG_LEVEL: debug
       - name: Publish Starburst to Chromatic
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
@@ -41,3 +50,5 @@ jobs:
           buildScriptName: build-storybook-starburst
           projectToken: ${{ secrets.CHROMATIC_STARBURST}}
           diagnostics: true
+        env:
+          LOG_LEVEL: debug
