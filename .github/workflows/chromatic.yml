@@ -27,7 +27,7 @@ jobs:
           diagnostics: true
         env:
           LOG_LEVEL: debug
-       - name: Archive code coverage results
+      - name: Archive code coverage results
         uses: actions/upload-artifact@v3
         with:
           name: Chromatic Diagnostics
