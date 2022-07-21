@@ -24,6 +24,9 @@ jobs:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           buildScriptName: build-storybook-galaxy
           projectToken: ${{ secrets.CHROMATIC_GALAXY}}
+          debug: true
+        env:
+          LOG_LEVEL: 'error'
       - name: Publish Starburst to Chromatic
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
@@ -31,6 +34,9 @@ jobs:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           buildScriptName: build-storybook-starburst
           projectToken: ${{ secrets.CHROMATIC_STARBURST}}
+          debug: true
+        env:
+          LOG_LEVEL: 'error'
       - name: Publish Supernova to Chromatic
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
@@ -38,3 +44,6 @@ jobs:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           buildScriptName: build-storybook-supernova
           projectToken: ${{ secrets.CHROMATIC_SUPERNOVA}}
+          debug: true
+        env:
+          LOG_LEVEL: 'error'
