@@ -6,7 +6,8 @@
     "build-storybooks-all": "nx run-many --target=build-storybook --all",
     "build-storybook-galaxy": "npx nx run galaxy:build-storybook",
     "build-storybook-supernova": "npx nx run supernova:build-storybook",
-    "build-storybook-starburst": "npx nx run starburst:build-storybook"
+    "build-storybook-starburst": "npx nx run starburst:build-storybook",
+    "build-storybook-milky-way": "npx nx run milky-way:build-storybook"
   },
   "private": true,
   "dependencies": {
