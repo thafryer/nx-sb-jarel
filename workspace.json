@@ -4,6 +4,8 @@
   "projects": {
     "galaxy": "packages/galaxy",
     "galaxy-e2e": "packages/galaxy-e2e",
+    "milky-way": "packages/milky-way",
+    "milky-way-e2e": "packages/milky-way-e2e",
     "starburst": "packages/starburst",
     "supernova": "packages/supernova"
   }
