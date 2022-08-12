@@ -24,7 +24,7 @@ jobs:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           buildScriptName: build-storybook-supernova
           projectToken: ${{ secrets.CHROMATIC_SUPERNOVA}}
-      - name: Archive code coverage results
+      - name: Archive Diagnostic Info
         uses: actions/upload-artifact@v3
         with:
           name: Chromatic Diagnostics
