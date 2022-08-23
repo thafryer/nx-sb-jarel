@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 export interface TagProps {}
 
 const StyledTag = styled.div`
-  color: pink;
+  color: blue;
 `;
 
 export function Tag(props: TagProps) {
