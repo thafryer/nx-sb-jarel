@@ -6,6 +6,8 @@
     "galaxy-e2e": "packages/galaxy-e2e",
     "milky-way": "packages/milky-way",
     "milky-way-e2e": "packages/milky-way-e2e",
+    "pluto": "packages/pluto",
+    "pluto-e2e": "packages/pluto-e2e",
     "starburst": "packages/starburst",
     "supernova": "packages/supernova"
   }

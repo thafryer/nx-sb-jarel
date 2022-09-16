@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-jarel/pluto": ["packages/pluto/src/index.ts"],
       "@nx-jarel/starburst": ["packages/starburst/src/index.ts"],
       "@nx-jarel/supernova": ["packages/supernova/src/index.ts"]
     }
