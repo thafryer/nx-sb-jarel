@@ -13,30 +13,29 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        project: [supernova, galaxy, starburst, milky_way, pluto]
         include:
           - project: supernova
             buildScriptName: build-storybook-supernova
             chromaticSecretKey: CHROMATIC_SUPERNOVA
           - project: galaxy
             buildScriptName: build-storybook-galaxy
-            projectToken: CHROMATIC_GALAXY
+            chromaticSecretKey: CHROMATIC_GALAXY
           - project: starburst
             buildScriptName: build-storybook-starburst
-            projectToken: CHROMATIC_STARBURST
+            chromaticSecretKey: CHROMATIC_STARBURST
           - project: milky_way
             buildScriptName: build-storybook-milky-way
-            projectToken: CHROMATIC_MILKY_WAY
+            chromaticSecretKey: CHROMATIC_MILKY_WAY
           - project: pluto
             buildScriptName: build-storybook-pluto
-            projectToken: CHROMATIC_PLUTO
+            chromaticSecretKey: CHROMATIC_PLUTO
     # Job steps
     steps:
       - uses: actions/checkout@v1
       - name: Install dependencies
         run: yarn
         # 👇 Adds Chromatic as a step in the workflow
-      - name: Publish to Chromatic
+      - name: Publish ${{ matrix.project }} to Chromatic
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
         with:
