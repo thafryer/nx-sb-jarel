@@ -17,19 +17,19 @@ jobs:
         include:
           - project: supernova
             buildScriptName: build-storybook-supernova
-            chromaticSecretKey: { { secrets.CHROMATIC_SUPERNOVA } }
+            chromaticSecretKey: CHROMATIC_SUPERNOVA
           - project: galaxy
             buildScriptName: build-storybook-galaxy
-            projectToken: ${{ secrets.CHROMATIC_GALAXY}}
+            projectToken: CHROMATIC_GALAXY
           - project: starburst
             buildScriptName: build-storybook-starburst
-            projectToken: ${{ secrets.CHROMATIC_STARBURST}}
+            projectToken: CHROMATIC_STARBURST
           - project: milky_way
             buildScriptName: build-storybook-milky-way
-            projectToken: ${{ secrets.CHROMATIC_MILKY_WAY}}
+            projectToken: CHROMATIC_MILKY_WAY
           - project: pluto
             buildScriptName: build-storybook-pluto
-            projectToken: e050e0235415
+            projectToken: CHROMATIC_PLUTO
     # Job steps
     steps:
       - uses: actions/checkout@v1
@@ -42,6 +42,6 @@ jobs:
         with:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           buildScriptName: ${{ matrix.buildScriptName }}
-          projectToken: ${{ matrix.chromaticSecretKey}}
+          projectToken: ${{ secrets[matrix.chromaticSecretKey] }}
           onlyChanged: true
           debug: true
