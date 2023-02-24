@@ -7,7 +7,8 @@
     "build-storybook-galaxy": "npx nx run galaxy:build-storybook",
     "build-storybook-supernova": "npx nx run supernova:build-storybook",
     "build-storybook-starburst": "npx nx run starburst:build-storybook",
-    "build-storybook-milky-way": "npx nx run milky-way:build-storybook"
+    "build-storybook-milky-way": "npx nx run milky-way:build-storybook",
+    "build-storybook-pluto": "npx nx run pluto:build-storybook"
   },
   "private": true,
   "dependencies": {
