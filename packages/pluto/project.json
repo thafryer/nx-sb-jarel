@@ -42,7 +42,8 @@
         "outputPath": "dist/storybook/pluto",
         "config": {
           "configFolder": "packages/pluto/.storybook"
-        }
+        },
+        "webpackStatsJson": true
       },
       "configurations": {
         "ci": {

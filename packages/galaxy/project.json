@@ -78,7 +78,8 @@
         "outputPath": "dist/storybook/galaxy",
         "config": {
           "configFolder": "packages/galaxy/.storybook"
-        }
+        },
+        "webpackStatsJson": true
       },
       "configurations": {
         "ci": {

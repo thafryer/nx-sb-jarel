@@ -62,7 +62,8 @@
         "outputPath": "dist/storybook/milky-way",
         "config": {
           "configFolder": "packages/milky-way/.storybook"
-        }
+        },
+        "webpackStatsJson": true
       },
       "configurations": {
         "ci": {

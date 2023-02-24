@@ -42,7 +42,8 @@
         "outputPath": "dist/storybook/starburst",
         "config": {
           "configFolder": "packages/starburst/.storybook"
-        }
+        },
+        "webpackStatsJson": true
       },
       "configurations": {
         "ci": {

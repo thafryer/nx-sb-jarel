@@ -42,7 +42,8 @@
         "outputPath": "dist/storybook/supernova",
         "config": {
           "configFolder": "packages/supernova/.storybook"
-        }
+        },
+        "webpackStatsJson": true
       },
       "configurations": {
         "ci": {
