@@ -75,5 +75,6 @@
     "url-loader": "^3.0.0"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "nx-jarel@0.0.0"
+  "_id": "nx-jarel@0.0.0",
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
